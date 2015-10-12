@@ -105,54 +105,54 @@ a {
 [class^="weui_icon_"]:before, [class*=" weui_icon_"]:before {
   margin: 0; }
 
-.weui_icon_success :before {
+.weui_icon_success:before {
   font-size: 23px;
   color: #09BB07; }
 
-.weui_icon_waiting :before {
+.weui_icon_waiting:before {
   font-size: 23px;
   color: #10AEFF; }
 
-.weui_icon_warn :before {
+.weui_icon_warn {
   font-size: 23px;
   color: #F43530; }
 
-.weui_icon_info :before {
+.weui_icon_info {
   font-size: 23px;
   color: #10AEFF; }
 
-.weui_icon_success_circle :before {
+.weui_icon_success_circle:before {
   font-size: 23px;
   color: #09BB07; }
 
-.weui_icon_success_no_circle :before {
+.weui_icon_success_no_circle:before {
   font-size: 23px;
   color: #09BB07; }
 
-.weui_icon_waiting_circle :before {
+.weui_icon_waiting_circle:before {
   font-size: 23px;
   color: #10AEFF; }
 
-.weui_icon_circle :before {
+.weui_icon_circle:before {
   font-size: 23px;
   color: #C9C9C9; }
 
-.weui_icon_download :before {
+.weui_icon_download:before {
   font-size: 23px;
   color: #09BB07; }
 
-.weui_icon_safe_success :before {
+.weui_icon_safe_success:before {
   color: #09BB07; }
 
-.weui_icon_safe_warn :before {
+.weui_icon_safe_warn:before {
   color: #FFBE00; }
 
-.weui_icon_msg :before {
+.weui_icon_msg:before {
   font-size: 104px; }
-  .weui_icon_warn .weui_icon_msg :before {
+  .weui_icon_warn .weui_icon_msg:before {
     color: #F76260; }
 
-.weui_icon_safe :before {
+.weui_icon_safe:before {
   font-size: 104px; }
 
 .weui_btn {
@@ -167,7 +167,7 @@ a {
   text-align: center;
   text-decoration: none;
   color: #FFFFFF;
-  line-height: "";
+  line-height: 2.33333;
   border-radius: 5px;
   -webkit-tap-highlight-color: transparent;
   overflow: visible; }
@@ -579,7 +579,7 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
   text-align: center;
   text-decoration: none;
   color: #FFFFFF;
-  line-height: "";
+  line-height: 2.33333;
   border-radius: 5px;
   -webkit-tap-highlight-color: transparent;
   overflow: visible; }

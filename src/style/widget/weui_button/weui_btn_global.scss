@@ -12,7 +12,7 @@
     text-align: center;
     text-decoration: none;
     color: $weuiBtnFontColor;
-    line-height: unit($weuiBtnHeight/$weuiBtnFontSize);
+    line-height: $weuiBtnHeight/$weuiBtnFontSize;
     border-radius: $weuiBtnBorderRadius;
     @include setTapColor();
     overflow: visible;
