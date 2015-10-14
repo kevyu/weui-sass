@@ -1,4 +1,5 @@
-@import "../../base/fn";
+﻿@import "../../base/fn";
+@import "compass/css3/transform";
 
 $weuiDialogBackgroudColor: #FAFAFC;
 $weuiDialogLineColor: #D5D5D6;
@@ -10,7 +11,7 @@ $weuiDialogLinkColor: #3cc51f;
     width: 85%;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    @include transform(translate(-50%, -50%));      // compass css3
 
     background-color: $weuiDialogBackgroudColor;
     text-align: center;

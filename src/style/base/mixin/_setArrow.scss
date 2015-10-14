@@ -1,3 +1,4 @@
+﻿@import "compass/css3/transform";
 // css2 arrow
 @mixin arrow($borderWidth, $borderColor) {
     @include setArrowWidth($borderWidth);
@@ -82,17 +83,17 @@
     border-color: $borderColor;
     border-style: solid;
     @if $direction == top {
-        @include transform(translate(0, 0) rotate(-45deg));
+        @include transform(translate(0, 0) rotate(-45deg));     // compass css3
     } @else if $direction == right {
-        transform: rotate(45deg);
+        @include transform(rotate(45deg));    // compass css3
         position: relative;
         top: -2px;
     } @else if $direction == down {
-        transform: rotate(135deg);
+        @include transform(rotate(135deg));    // compass css3
         position: relative;
         top: -3px;
     } @else if $direction == bottom {
-        transform: rotate(-135deg);
+        @include transform(rotate(-135deg));    // compass css3
         position: relative;
         top: -2px;
     }
