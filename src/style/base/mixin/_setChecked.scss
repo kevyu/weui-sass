@@ -1,13 +1,11 @@
-﻿@import "compass/css3/transform";
-
-@mixin setChecked($c:#FFFFFF) {
+﻿@mixin setChecked($c:#FFFFFF) {
     display: inline-block;
     content: '';
     width: 4px;
     height: 8px;
     border-bottom: 2px solid $c;
     border-right: 2px solid $c;
-    @include transform(translate(0, 0) rotate(45deg));       // compass css3
+    transform: translate(0, 0) rotate(45deg);
 }
 
 @mixin  setCheckedAbs($c:#FFFFFF) {
@@ -19,5 +17,5 @@
     height: 8px;
     border-bottom: 2px solid $c;
     border-right: 2px solid $c;
-    @include transform(translate(-50%, -65%) rotate(45deg));    // compass css3
+    transform: translate(-50%, -65%) rotate(45deg);
 }

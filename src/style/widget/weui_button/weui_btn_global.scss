@@ -1,5 +1,4 @@
 ﻿@import "../../base/fn";
-@import "compass/css3/transform";
 
 .weui_btn {
     position: relative;
@@ -25,8 +24,8 @@
         top: 0;
         left: 0;
         border: 1px solid rgba(0, 0, 0, .2);
-        @include transform(scale(.5));     // compass css3
-        @include transform-origin(0 0, false);     // compass css3
+        transform: scale(.5);
+        transform-origin: 0 0;
         box-sizing: border-box;
         border-radius: $weuiBtnBorderRadius*2;
     }

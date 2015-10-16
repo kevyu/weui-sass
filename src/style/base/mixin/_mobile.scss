@@ -12,3 +12,14 @@
     -ms-user-select: none;
     user-select: none;
 }
+
+// opacity
+@mixin opacity($opacity) {
+    @if $opacity == 1 {
+      filter: "progid:DXImageTransform.Microsoft.Alpha(enabled=false)";
+    }
+    @else {
+      filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=#{round($opacity * 100)})";
+    }
+  opacity: $opacity;
+}

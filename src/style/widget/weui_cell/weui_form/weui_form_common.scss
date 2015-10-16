@@ -1,5 +1,4 @@
 ﻿@import "../../../base/fn";
-@import "compass/css3/transform";
 
 .weui_label{
   display:block;
@@ -25,7 +24,7 @@
 .weui_toptips {
     display:none;
     position: fixed;
-    @include transform(translateZ(0));      // compass css3
+    transform: translateZ(0);
     width: 100%;
     top: 0;
     line-height: 2.3;

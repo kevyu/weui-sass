@@ -1,25 +1,18 @@
-/* line 1, ../../src/example/example.scss */
 html, body {
   height: 100%;
-  -webkit-tap-highlight-color: transparent;
-}
+  -webkit-tap-highlight-color: transparent; }
 
-/* line 6, ../../src/example/example.scss */
 body, .page {
-  background-color: #FBF9FE;
-}
+  background-color: #FBF9FE; }
 
-/* line 7, ../../src/example/example.scss */
 .container {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  overflow: hidden;
-}
+  overflow: hidden; }
 
-/* line 15, ../../src/example/example.scss */
 .page {
   position: absolute;
   top: 0;
@@ -27,69 +20,47 @@ body, .page {
   bottom: 0;
   left: 0;
   overflow-y: auto;
-  -webkit-overflow-scrolling: touch;
-}
+  -webkit-overflow-scrolling: touch; }
 
-/* line 24, ../../src/example/example.scss */
 .hd {
-  padding: 2em 0;
-}
+  padding: 2em 0; }
 
-/* line 27, ../../src/example/example.scss */
 .page_desc {
   text-align: center;
   color: #888;
-  font-size: 14px;
-}
+  font-size: 14px; }
 
-/* line 32, ../../src/example/example.scss */
 .bd.spacing {
-  padding: 0 15px;
-}
+  padding: 0 15px; }
 
-/* line 36, ../../src/example/example.scss */
 .page_title {
   text-align: center;
   font-size: 34px;
   color: #3CC51F;
   font-weight: 400;
-  margin: 0 15%;
-}
+  margin: 0 15%; }
 
-/* line 41, ../../src/example/example.scss */
 .global_navs {
-  background-color: transparent;
-}
-/* line 43, ../../src/example/example.scss */
-.global_navs:before, .global_navs:after {
-  border-color: #D9DBDA;
-}
-/* line 44, ../../src/example/example.scss */
-.global_navs .cell {
-  padding-top: .5em;
-  padding-bottom: .5em;
-}
-/* line 46, ../../src/example/example.scss */
-.global_navs .cell:before {
-  border-color: #D9DBDA;
-}
-/* line 52, ../../src/example/example.scss */
-.global_navs .icon_nav {
-  width: 28px;
-  height: 28px;
-  display: block;
-  margin-right: .7em;
-}
+  background-color: transparent; }
+  .global_navs:before, .global_navs:after {
+    border-color: #D9DBDA; }
+  .global_navs .cell {
+    padding-top: .5em;
+    padding-bottom: .5em; }
+    .global_navs .cell:before {
+      border-color: #D9DBDA; }
+  .global_navs .icon_nav {
+    width: 28px;
+    height: 28px;
+    display: block;
+    margin-right: .7em; }
 
-/* line 58, ../../src/example/example.scss */
 .page.button .page_title {
-  color: #225FBA;
-}
-/* line 59, ../../src/example/example.scss */
+  color: #225FBA; }
+
 .page.button .bd {
-  padding: 0 15px;
-}
-/* line 60, ../../src/example/example.scss */
+  padding: 0 15px; }
+
 .page.button .button_sp_area {
   padding: 10px 0;
   width: 60%;
@@ -97,88 +68,56 @@ body, .page {
   text-align: justify;
   text-justify: distribute-all-lines;
   /*ie6-9*/
-  font-size: 0;
-}
-/* line 69, ../../src/example/example.scss */
-.page.button .button_sp_area:after {
-  display: inline-block;
-  width: 100%;
-  height: 0;
-  font-size: 0;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  content: ".";
-}
+  font-size: 0; }
+  .page.button .button_sp_area:after {
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    font-size: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    content: "."; }
 
-/* line 80, ../../src/example/example.scss */
 .page.cell .page_title {
-  color: #225FBA;
-}
-/* line 81, ../../src/example/example.scss */
+  color: #225FBA; }
+
 .page.cell .bd {
-  padding-bottom: 30px;
-}
+  padding-bottom: 30px; }
 
-/* line 87, ../../src/example/example.scss */
 .page.toast {
-  background-color: #FFFFFF;
-}
-/* line 89, ../../src/example/example.scss */
-.page.toast .bd {
-  padding: 120px 15px 0;
-}
+  background-color: #FFFFFF; }
+  .page.toast .bd {
+    padding: 120px 15px 0; }
 
-/* line 95, ../../src/example/example.scss */
 .page.dialog {
-  background-color: #FFFFFF;
-}
-/* line 97, ../../src/example/example.scss */
-.page.dialog .bd {
-  padding: 120px 15px 0;
-}
+  background-color: #FFFFFF; }
+  .page.dialog .bd {
+    padding: 120px 15px 0; }
 
-/* line 104, ../../src/example/example.scss */
 .page.msg {
-  background-color: #FFFFFF;
-}
-/* line 106, ../../src/example/example.scss */
-.page.msg .weui_msg {
-  padding-top: 30px;
-}
+  background-color: #FFFFFF; }
+  .page.msg .weui_msg {
+    padding-top: 30px; }
 
-/* line 113, ../../src/example/example.scss */
 .page.article {
-  background-color: #FFFFFF;
-}
-/* line 115, ../../src/example/example.scss */
-.page.article .page_title {
-  color: #DE7C23;
-}
+  background-color: #FFFFFF; }
+  .page.article .page_title {
+    color: #DE7C23; }
 
-/* line 121, ../../src/example/example.scss */
 .page.icons {
   background-color: #FFFFFF;
-  text-align: center;
-}
-/* line 123, ../../src/example/example.scss */
-.page.icons .page_title {
-  color: #3E24BD;
-}
-/* line 124, ../../src/example/example.scss */
-.page.icons .bd {
-  padding: 30px 0;
-  text-align: center;
-}
-/* line 125, ../../src/example/example.scss */
-.page.icons .icon_sp_area {
-  padding: 10px 20px;
-  text-align: left;
-}
-/* line 126, ../../src/example/example.scss */
-.page.icons i {
-  margin: 0 5px 10px;
-}
+  text-align: center; }
+  .page.icons .page_title {
+    color: #3E24BD; }
+  .page.icons .bd {
+    padding: 30px 0;
+    text-align: center; }
+  .page.icons .icon_sp_area {
+    padding: 10px 20px;
+    text-align: left; }
+  .page.icons i {
+    margin: 0 5px 10px; }
 
 @keyframes slideIn {
   from {
@@ -186,74 +125,62 @@ body, .page {
     -moz-transform: translate3d(100%, 0, 0);
     -ms-transform: translate3d(100%, 0, 0);
     -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
+    transform: translate3d(100%, 0, 0); }
   to {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
+    transform: translate3d(0, 0, 0); } }
+
 @-webkit-keyframes slideIn {
   from {
     -webkit-transform: translate3d(100%, 0, 0);
     -moz-transform: translate3d(100%, 0, 0);
     -ms-transform: translate3d(100%, 0, 0);
     -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
+    transform: translate3d(100%, 0, 0); }
   to {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
-}
+    transform: translate3d(0, 0, 0); } }
+
 @-webkit-keyframes slideOut {
   from {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+    transform: translate3d(0, 0, 0); }
   to {
     -webkit-transform: translate3d(100%, 0, 0);
     -moz-transform: translate3d(100%, 0, 0);
     -ms-transform: translate3d(100%, 0, 0);
     -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
+    transform: translate3d(100%, 0, 0); } }
+
 @keyframes slideOut {
   from {
     -webkit-transform: translate3d(0, 0, 0);
     -moz-transform: translate3d(0, 0, 0);
     -ms-transform: translate3d(0, 0, 0);
     -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-  }
+    transform: translate3d(0, 0, 0); }
   to {
     -webkit-transform: translate3d(100%, 0, 0);
     -moz-transform: translate3d(100%, 0, 0);
     -ms-transform: translate3d(100%, 0, 0);
     -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0);
-  }
-}
-/* line 193, ../../src/example/example.scss */
-.page.slideIn {
-  -webkit-animation: slideIn .2s forwards;
-  -o-animation: slideIn .2s forwards;
-  animation: slideIn .2s forwards;
-}
+    transform: translate3d(100%, 0, 0); } }
 
-/* line 198, ../../src/example/example.scss */
+.page.slideIn {
+  -webkit-animation: slideIn 0.2s forwards;
+  -o-animation: slideIn 0.2s forwards;
+  animation: slideIn 0.2s forwards; }
+
 .page.slideOut {
-  -webkit-animation: slideOut .2s forwards;
-  -o-animation: slideOut .2s forwards;
-  animation: slideOut .2s forwards;
-}
+  -webkit-animation: slideOut 0.2s forwards;
+  -o-animation: slideOut 0.2s forwards;
+  animation: slideOut 0.2s forwards; }

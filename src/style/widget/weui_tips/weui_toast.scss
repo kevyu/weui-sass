@@ -1,5 +1,5 @@
 ﻿@import "../../base/fn";
-@import "compass/css3";
+
 .weui_toast {
     position: fixed;
     z-index: 3;
@@ -10,7 +10,7 @@
     margin-left: -3.8em;
     background: rgba(40, 40, 40, 0.75);
     text-align: center;
-    @include border-radius(5px); // compass css3
+    border-radius: 5px;
     color: #FFFFFF;
 }
 
@@ -54,86 +54,85 @@
         width: 8.14px;
         height: 3.08px;
         background: rgb(209, 209, 213);
-        // compass css3
-        @include box-shadow(rgba(0, 0, 0, 0.0980392) 0px 0px 1px);
-        @include border-radius(1px);
-        @include transform-origin(left 50% 0px);
+        box-shadow: rgba(0, 0, 0, 0.0980392) 0px 0px 1px;
+        border-radius: 1px;
+        transform-origin: left 50% 0px;
     }
     &_0 {
-        @include animation(opacity-60-25-0-12 1.25s linear infinite);
+        animation: opacity-60-25-0-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(0deg) translate(7.92px, 0px));
+            transform: rotate(0deg) translate(7.92px, 0px);
         }
     }
     &_1 {
-        @include animation(opacity-60-25-1-12 1.25s linear infinite);
+        animation: opacity-60-25-1-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(30deg) translate(7.92px, 0px));
+            transform: rotate(30deg) translate(7.92px, 0px);
         }
     }
     &_2 {
-        @include animation(opacity-60-25-2-12 1.25s linear infinite);
+        animation: opacity-60-25-2-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(60deg) translate(7.92px, 0px));
+            transform: rotate(60deg) translate(7.92px, 0px);
         }
     }
     &_3 {
-        @include animation(opacity-60-25-3-12 1.25s linear infinite);
+        animation: opacity-60-25-3-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(90deg) translate(7.92px, 0px));
+            transform: rotate(90deg) translate(7.92px, 0px);
         }
     }
     &_4 {
-        @include animation(opacity-60-25-4-12 1.25s linear infinite);
+        animation: opacity-60-25-4-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(120deg) translate(7.92px, 0px));
+            transform: rotate(120deg) translate(7.92px, 0px);
         }
     }
     &_5 {
-        @include animation(opacity-60-25-5-12 1.25s linear infinite);
+        animation: opacity-60-25-5-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(150deg) translate(7.92px, 0px));
+            transform: rotate(150deg) translate(7.92px, 0px);
         }
     }
     &_6 {
-        @include animation(opacity-60-25-6-12 1.25s linear infinite);
+        animation: opacity-60-25-6-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(180deg) translate(7.92px, 0px));
+            transform: rotate(180deg) translate(7.92px, 0px);
         }
     }
     &_7 {
-        @include animation(opacity-60-25-7-12 1.25s linear infinite);
+        animation: opacity-60-25-7-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(210deg) translate(7.92px, 0px));
+            transform: rotate(210deg) translate(7.92px, 0px);
         }
     }
     &_8 {
-        @include animation(opacity-60-25-8-12 1.25s linear infinite);
+        animation: opacity-60-25-8-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(240deg) translate(7.92px, 0px));
+            transform: rotate(240deg) translate(7.92px, 0px);
         }
     }
     &_9 {
-        @include animation(opacity-60-25-9-12 1.25s linear infinite);
+        animation: opacity-60-25-9-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(270deg) translate(7.92px, 0px));
+            transform: rotate(270deg) translate(7.92px, 0px);
         }
     }
     &_10 {
-        @include animation(opacity-60-25-10-12 1.25s linear infinite);
+        animation: opacity-60-25-10-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(300deg) translate(7.92px, 0px));
+            transform: rotate(300deg) translate(7.92px, 0px);
         }
     }
     &_11 {
-        @include animation(opacity-60-25-11-12 1.25s linear infinite);
+        animation: opacity-60-25-11-12 1.25s linear infinite;
         &:before {
-            @include transform(rotate(330deg) translate(7.92px, 0px));
+            transform: rotate(330deg) translate(7.92px, 0px);
         }
     }
 }
 
-@include keyframes(opacity-60-25-0-12) {
+@keyframes opacity-60-25-0-12 {
     0% {
         @include opacity(0.25);
     }
@@ -151,7 +150,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-1-12) {
+@keyframes opacity-60-25-1-12 {
     0% {
         @include opacity(0.25);
     }
@@ -169,7 +168,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-2-12) {
+@keyframes opacity-60-25-2-12 {
     0% {
         @include opacity(0.25);
     }
@@ -187,7 +186,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-3-12) {
+@keyframes opacity-60-25-3-12 {
     0% {
         @include opacity(0.25);
     }
@@ -205,7 +204,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-4-12) {
+@keyframes opacity-60-25-4-12 {
     0% {
         @include opacity(0.25);
     }
@@ -223,7 +222,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-5-12) {
+@keyframes opacity-60-25-5-12 {
     0% {
         @include opacity(0.270958333333333);
     }
@@ -241,7 +240,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-6-12) {
+@keyframes opacity-60-25-6-12 {
     0% {
         @include opacity(0.375125);
     }
@@ -259,7 +258,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-7-12) {
+@keyframes opacity-60-25-7-12 {
     0% {
         @include opacity(0.479291666666667);
     }
@@ -277,7 +276,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-8-12) {
+@keyframes opacity-60-25-8-12 {
     0% {
         @include opacity(0.583458333333333);
     }
@@ -295,7 +294,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-9-12) {
+@keyframes opacity-60-25-9-12 {
     0% {
         @include opacity(0.687625);
     }
@@ -313,7 +312,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-10-12) {
+@keyframes opacity-60-25-10-12 {
     0% {
         @include opacity(0.791791666666667);
     }
@@ -331,7 +330,7 @@
     }
 }
 
-@include keyframes(opacity-60-25-11-12) {
+@keyframes opacity-60-25-11-12 {
     0% {
         @include opacity(0.895958333333333);
     }

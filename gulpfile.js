@@ -6,15 +6,21 @@ var minify = require('gulp-minify-css');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
 
+var path = require('path');
+
 var express = require('express');
 
-var dist = __dirname + '/dist';
+// 构建后的目标地址
+var dist = path.join(__dirname, 'dist');
 
+
+// release 整个项目
 gulp.task('release', function(){
 
     var option = {base: 'src'};
 
-    gulp.src('src/example/**/**', option)
+    // 复制非scss文件到dist
+    gulp.src('src/example/**/*.!(scss)', option)
         .pipe(gulp.dest(dist));
 
     gulp.src('src/example/**/*.scss', option)
@@ -35,12 +41,27 @@ gulp.task('release', function(){
         .pipe(gulp.dest(dist));
 });
 
+
+// compass 兼容处理
+var compass = require('gulp-compass');
+gulp.task('compass', function() {
+  gulp.src('./src/*/*.scss')
+    .pipe(compass({
+      project: __dirname,       // 项目地址
+      css: 'dist',              // 目标地址
+      sass: 'src'               // 源文件地址
+    }))
+    .pipe(gulp.dest(dist));
+});
+
+// 如果文件发生变动则直接release
 gulp.task('watch', function () {
     chokidar.watch('src/**/*.*').on('all', function () {
         gulp.run('release');
     });
 });
 
+// 启动server
 gulp.task('server', function () {
     var app = express();
     var port = yargs.p || yargs.port || 8080;
