@@ -41,19 +41,6 @@ gulp.task('release', function(){
         .pipe(gulp.dest(dist));
 });
 
-
-// compass 兼容处理
-var compass = require('gulp-compass');
-gulp.task('compass', function() {
-  gulp.src('./src/*/*.scss')
-    .pipe(compass({
-      project: __dirname,       // 项目地址
-      css: 'dist',              // 目标地址
-      sass: 'src'               // 源文件地址
-    }))
-    .pipe(gulp.dest(dist));
-});
-
 // 如果文件发生变动则直接release
 gulp.task('watch', function () {
     chokidar.watch('src/**/*.*').on('all', function () {
