@@ -253,11 +253,11 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
 
 /*gap between btn*/
 .weui_btn + .weui_btn {
-  margin-top: 10px; }
+  margin-top: 15px; }
 
 .weui_btn.weui_btn_inline + .weui_btn.weui_btn_inline {
   margin-top: auto;
-  margin-left: 10px; }
+  margin-left: 15px; }
 
 .weui_btn_area {
   margin-left: 15px;
@@ -269,10 +269,11 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    letter-spacing: -1em\9; }
     .weui_btn_area.weui_btn_area_inline .weui_btn {
       margin-top: auto;
-      margin-right: 10px;
+      margin-right: 15px;
       width: 100%;
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -280,6 +281,11 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
               flex: 1; }
       .weui_btn_area.weui_btn_area_inline .weui_btn:last-child {
         margin-right: 0; }
+    .weui_btn_area.weui_btn_area_inline .weui_btn {
+      display: inline-block\9;
+      width: 48.5%\9;
+      margin-right: 3%\9;
+      letter-spacing: 0\9; }
 
 .weui_cell {
   position: relative; }
@@ -725,11 +731,11 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
 
 /*gap between btn*/
 .weui_btn + .weui_btn {
-  margin-top: 10px; }
+  margin-top: 15px; }
 
 .weui_btn.weui_btn_inline + .weui_btn.weui_btn_inline {
   margin-top: auto;
-  margin-left: 10px; }
+  margin-left: 15px; }
 
 .weui_btn_area {
   margin-left: 15px;
@@ -741,10 +747,11 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    letter-spacing: -1em\9; }
     .weui_btn_area.weui_btn_area_inline .weui_btn {
       margin-top: auto;
-      margin-right: 10px;
+      margin-right: 15px;
       width: 100%;
       -webkit-box-flex: 1;
       -webkit-flex: 1;
@@ -752,6 +759,11 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
               flex: 1; }
       .weui_btn_area.weui_btn_area_inline .weui_btn:last-child {
         margin-right: 0; }
+    .weui_btn_area.weui_btn_area_inline .weui_btn {
+      display: inline-block\9;
+      width: 48.5%\9;
+      margin-right: 3%\9;
+      letter-spacing: 0\9; }
 
 .weui_msg {
   padding: 75px 0 0;
