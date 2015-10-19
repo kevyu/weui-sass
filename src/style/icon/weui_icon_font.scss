@@ -1,4 +1,4 @@
-@import "weui_font";
+﻿@import "weui_font";
 @import "../base/fn";
 
 [class^="weui_icon_"]:before, [class*=" weui_icon_"]:before {
@@ -14,11 +14,11 @@
     font-size: 23px;
     color: #10AEFF;
 }
-.weui_icon_warn & {
+.weui_icon_warn:before {
     font-size: 23px;
     color: #F43530;
 }
-.weui_icon_info & {
+.weui_icon_info:before {
     font-size: 23px;
     color: #10AEFF;
 }
