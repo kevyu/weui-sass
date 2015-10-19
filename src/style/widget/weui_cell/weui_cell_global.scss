@@ -1,4 +1,4 @@
-@import "../../base/fn";
+﻿@import "../../base/fn";
 
 .weui_cell {
     // onepx
@@ -36,6 +36,10 @@
     padding-left: $weuiCellGapH;
     padding-right: $weuiCellGapH;
     color: $globalTextColor;
+
+    &+.weui_cells{
+        margin-top: 0;
+    }
 }
 
 .weui_cell {

@@ -1,4 +1,4 @@
-@import "../../base/fn";
+﻿@import "../../base/fn";
 
 .weui_btn {
     position: relative;
@@ -15,7 +15,7 @@
     line-height: $weuiBtnHeight/$weuiBtnFontSize;
     border-radius: $weuiBtnBorderRadius;
     @include setTapColor();
-    overflow: visible;
+    overflow: hidden;
     &:after {
         content: " ";
         width: 200%;

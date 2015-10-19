@@ -1,4 +1,4 @@
-// css2 arrow
+﻿// css2 arrow
 @mixin arrow($borderWidth, $borderColor) {
     @include setArrowWidth($borderWidth);
     @include setArrowColor($borderColor);
@@ -82,7 +82,7 @@
     border-color: $borderColor;
     border-style: solid;
     @if $direction == top {
-        @include transform(translate(0, 0) rotate(-45deg));
+        transform: translate(0, 0) rotate(-45deg); 
     } @else if $direction == right {
         transform: rotate(45deg);
         position: relative;
