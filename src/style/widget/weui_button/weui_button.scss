@@ -56,10 +56,12 @@ button, input {
             &:last-child {
                 margin-right: 0;
             }
+
             //hack for IE9
             // display: inline-block ~"\9";
             // width: 48.5% ~"\9";
             // margin-right: 1.5% ~"\9";
+
         }
     }
 }
