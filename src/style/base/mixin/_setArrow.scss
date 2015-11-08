@@ -27,9 +27,7 @@
     display: inline-block;
     width: 0;
     height: 0;
-    border-width: $borderWidth;
-    border-style: dashed;
-    border-color: transparent;
+    border: $borderWidth dashed transparent;
     @if $direction == top {
         @include arrow_t($borderColor);
     } @else if $direction == right {

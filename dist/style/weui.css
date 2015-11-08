@@ -844,7 +844,7 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   background-color: transparent; }
 
 .weui_msg {
-  padding-top: 36;
+  padding-top: 36px;
   text-align: center; }
   .weui_msg .weui_icon_area {
     margin-bottom: 30px; }
