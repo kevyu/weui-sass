@@ -97,8 +97,6 @@ body, .page {
 
 .page.msg {
   background-color: #FFFFFF; }
-  .page.msg .weui_msg {
-    padding-top: 30px; }
 
 .page.article {
   background-color: #FFFFFF; }
@@ -121,66 +119,18 @@ body, .page {
 
 @keyframes slideIn {
   from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); }
   to {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
-
-@-webkit-keyframes slideIn {
-  from {
-    -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); }
-  to {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); } }
-
-@-webkit-keyframes slideOut {
-  from {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0); }
-  to {
-    -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
-    transform: translate3d(100%, 0, 0); } }
 
 @keyframes slideOut {
   from {
-    -webkit-transform: translate3d(0, 0, 0);
-    -moz-transform: translate3d(0, 0, 0);
-    -ms-transform: translate3d(0, 0, 0);
-    -o-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); }
   to {
-    -webkit-transform: translate3d(100%, 0, 0);
-    -moz-transform: translate3d(100%, 0, 0);
-    -ms-transform: translate3d(100%, 0, 0);
-    -o-transform: translate3d(100%, 0, 0);
     transform: translate3d(100%, 0, 0); } }
 
 .page.slideIn {
-  -webkit-animation: slideIn 0.2s forwards;
-  -o-animation: slideIn 0.2s forwards;
   animation: slideIn 0.2s forwards; }
 
 .page.slideOut {
-  -webkit-animation: slideOut 0.2s forwards;
-  -o-animation: slideOut 0.2s forwards;
   animation: slideOut 0.2s forwards; }
