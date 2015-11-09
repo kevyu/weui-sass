@@ -13,7 +13,6 @@ var express = require('express');
 // 构建后的目标地址
 var dist = path.join(__dirname, 'dist');
 
-
 // release 整个项目
 gulp.task('release', function(){
 
