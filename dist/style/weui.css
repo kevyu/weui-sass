@@ -286,20 +286,18 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
     border-color: #039702; }
   .weui_btn_plain_primary:after {
     border-width: 0; }
-
-button.weui_btn_plain_primary, input.weui_btn_plain_primary {
-  border-width: 1px;
-  background-color: transparent; }
+  .weui_btn_plain_primary button.weui_btn_plain_primary, .weui_btn_plain_primary input.weui_btn_plain_primary {
+    border-width: 1px;
+    background-color: transparent; }
 
 .weui_btn_plain_default {
   color: #5A5A5A;
   border: 1px solid #5A5A5A; }
   .weui_btn_plain_default:after {
     border-width: 0; }
-
-button.weui_btn_plain_default, input.weui_btn_plain_default {
-  border-width: 1px;
-  background-color: transparent; }
+  .weui_btn_plain_default button.weui_btn_plain_default, .weui_btn_plain_default input.weui_btn_plain_default {
+    border-width: 1px;
+    background-color: transparent; }
 
 .weui_cell {
   position: relative; }
@@ -828,20 +826,18 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
     border-color: #039702; }
   .weui_btn_plain_primary:after {
     border-width: 0; }
-
-button.weui_btn_plain_primary, input.weui_btn_plain_primary {
-  border-width: 1px;
-  background-color: transparent; }
+  .weui_btn_plain_primary button.weui_btn_plain_primary, .weui_btn_plain_primary input.weui_btn_plain_primary {
+    border-width: 1px;
+    background-color: transparent; }
 
 .weui_btn_plain_default {
   color: #5A5A5A;
   border: 1px solid #5A5A5A; }
   .weui_btn_plain_default:after {
     border-width: 0; }
-
-button.weui_btn_plain_default, input.weui_btn_plain_default {
-  border-width: 1px;
-  background-color: transparent; }
+  .weui_btn_plain_default button.weui_btn_plain_default, .weui_btn_plain_default input.weui_btn_plain_default {
+    border-width: 1px;
+    background-color: transparent; }
 
 .weui_msg {
   padding-top: 36px;
