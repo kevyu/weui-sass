@@ -1,7 +1,6 @@
 ﻿@import "../../../base/fn";
 
 .weui_check_label {
-    display: block;
     @include setTapColor();
 }
 

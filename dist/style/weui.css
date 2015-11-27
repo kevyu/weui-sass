@@ -374,23 +374,25 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 
 .weui_cell {
   padding: 10px 15px;
-  display: block;
-  position: relative; }
-
-.weui_cell_hd, .weui_cell_bd, .weui_cell_ft {
-  display: table-cell;
-  vertical-align: middle;
-  word-wrap: break-word;
-  word-break: break-all;
-  white-space: nowrap; }
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
 
 .weui_cell_ft {
   text-align: right;
   color: #888; }
 
 .weui_cell_primary {
-  width: 2000px;
-  white-space: normal; }
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1; }
 
 .weui_cells_access .weui_cell:not(.no_access) {
   -webkit-tap-highlight-color: transparent; }
@@ -416,7 +418,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   top: -1px; }
 
 .weui_check_label {
-  display: block;
   -webkit-tap-highlight-color: transparent; }
 
 .weui_check {
@@ -953,9 +954,17 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   position: relative;
   line-height: 42px;
   margin-top: 20px;
-  font-size: 17px; }
+  font-size: 17px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
   .weui_dialog_ft a {
     display: block;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
     color: #3CC51F;
     text-decoration: none;
     -webkit-tap-highlight-color: transparent; }
@@ -970,16 +979,14 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
     width: 100%;
     height: 1px;
     border-top: 1px solid #D5D5D6;
-    -webkit-transform: scaleY(0.5);
-        -ms-transform: scaleY(0.5);
-            transform: scaleY(0.5);
     -webkit-transform-origin: 0 0;
         -ms-transform-origin: 0 0;
-            transform-origin: 0 0; }
+            transform-origin: 0 0;
+    -webkit-transform: scaleY(0.5);
+        -ms-transform: scaleY(0.5);
+            transform: scaleY(0.5); }
   .weui_dialog_confirm .weui_dialog_ft a {
-    position: relative;
-    float: left;
-    width: 50%; }
+    position: relative; }
     .weui_dialog_confirm .weui_dialog_ft a:after {
       content: " ";
       content: " ";
@@ -989,19 +996,14 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
       width: 1px;
       height: 100%;
       border-left: 1px solid #D5D5D6;
-      -webkit-transform: scaleX(0.5);
-          -ms-transform: scaleX(0.5);
-              transform: scaleX(0.5);
       -webkit-transform-origin: 0 0;
           -ms-transform-origin: 0 0;
-              transform-origin: 0 0; }
+              transform-origin: 0 0;
+      -webkit-transform: scaleX(0.5);
+          -ms-transform: scaleX(0.5);
+              transform: scaleX(0.5); }
     .weui_dialog_confirm .weui_dialog_ft a:first-child:after {
       display: none; }
-    .weui_dialog_confirm .weui_dialog_ft a:last-child {
-      float: none;
-      width: auto;
-      overflow: hidden;
-      *zoom: 1; }
 
 .weui_btn_dialog.default {
   color: #353535; }
