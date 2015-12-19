@@ -55,7 +55,6 @@ $weuiDialogLinkActiveBc: #EEEEEE;
         text-decoration: none;
         @include setTapColor();
         &:active {
-            text-decoration: none;
             background-color: $weuiDialogLinkActiveBc;
         }
     }
