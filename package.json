@@ -1,6 +1,6 @@
 {
   "name": "weui-sass",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "sass version for wechat mobile ui",
   "main": "index.js",
   "scripts": {
