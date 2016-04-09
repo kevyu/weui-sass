@@ -1044,6 +1044,7 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   display: -ms-flexbox;
   display: flex;
   position: absolute;
+  z-index: 1;
   top: 0;
   width: 100%;
   background-color: #fafafa; }
@@ -1078,7 +1079,7 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   .weui_navbar_item:active {
     background-color: #ededed; }
   .weui_navbar_item.weui_bar_item_on {
-    background-color: #f5f5f5; }
+    background-color: #eaeaea; }
   .weui_navbar_item:after {
     content: " ";
     position: absolute;
@@ -1251,10 +1252,10 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
     left: 15px; }
   .weui_media_box:first-child:before {
     display: none; }
-  a& {
+  a .weui_media_box {
     color: #000000;
     -webkit-tap-highlight-color: transparent; }
-    a&:active {
+    a .weui_media_box:active {
       background-color: #ECECEC; }
   .weui_media_box .weui_media_title {
     font-weight: 400;
@@ -1314,7 +1315,8 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
       -webkit-box-flex: 1;
       -webkit-flex: 1;
           -ms-flex: 1;
-              flex: 1; }
+              flex: 1;
+      min-width: 0; }
   .weui_media_box.weui_media_small_appmsg {
     padding: 0; }
     .weui_media_box.weui_media_small_appmsg .weui_cells {
@@ -1430,7 +1432,9 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 .weui_dialog_bd {
   padding: 0 20px;
   font-size: 15px;
-  color: #888; }
+  color: #888;
+  word-wrap: break-word;
+  word-break: break-all; }
 
 .weui_dialog_ft {
   position: relative;
@@ -2107,6 +2111,7 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
           transform: translate(0, 0); }
 
 .weui_search_bar {
+  position: relative;
   padding: 8px 10px;
   display: -webkit-box;
   display: -webkit-flex;
