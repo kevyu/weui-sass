@@ -1,8 +1,9 @@
 ﻿@import "../../../base/fn";
 
 .weui_label {
-  display:block;
-  width:$weuiCellLabelWidth;
+    display:block;
+    width:$weuiCellLabelWidth;
+    @include text_wrap();
 }
 .weui_input {
     width: 100%;
