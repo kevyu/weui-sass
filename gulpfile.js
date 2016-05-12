@@ -2,7 +2,7 @@ var yargs = require('yargs').argv;
 var gulp = require('gulp');
 var chokidar = require('chokidar');
 var sass = require('gulp-sass');
-var minify = require('gulp-minify-css');
+var minify = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
 
