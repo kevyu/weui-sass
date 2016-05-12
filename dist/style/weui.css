@@ -216,7 +216,6 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
   margin: 1.17647em 15px 0.3em; }
   .weui_btn_area.weui_btn_area_inline {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     .weui_btn_area.weui_btn_area_inline .weui_btn {
@@ -224,7 +223,6 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
       margin-right: 15px;
       width: 100%;
       -webkit-box-flex: 1;
-      -webkit-flex: 1;
           -ms-flex: 1;
               flex: 1; }
       .weui_btn_area.weui_btn_area_inline .weui_btn:last-child {
@@ -370,6 +368,7 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 
 .weui_cells_title {
   margin-top: .77em;
+  margin-bottom: .3em;
   padding-left: 15px;
   padding-right: 15px;
   color: #888;
@@ -388,11 +387,9 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   padding: 10px 15px;
   position: relative;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
 
@@ -402,7 +399,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 
 .weui_cell_primary {
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1; }
 
@@ -466,7 +462,9 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 
 .weui_label {
   display: block;
-  width: 3em; }
+  width: 105px;
+  word-wrap: break-word;
+  word-break: break-all; }
 
 .weui_input {
   width: 100%;
@@ -518,9 +516,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   .weui_cells_form .weui_cell_warn .weui_icon_warn {
     display: inline-block; }
 
-.weui_cells_form .weui_cell_hd {
-  padding-right: 1em; }
-
 .weui_cells_form .weui_cell_ft {
   font-size: 0; }
 
@@ -559,6 +554,7 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   width: 100%;
   font-size: inherit;
   height: 43px;
+  line-height: 44px;
   position: relative;
   z-index: 1;
   padding-left: 15px; }
@@ -592,6 +588,7 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   width: 100%;
   font-size: inherit;
   height: 43px;
+  line-height: 44px;
   position: relative;
   z-index: 1;
   padding-left: 15px; }
@@ -599,7 +596,8 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 .weui_select_before {
   padding-right: 15px; }
   .weui_select_before .weui_select {
-    width: auto; }
+    width: 105px;
+    box-sizing: border-box; }
   .weui_select_before .weui_cell_hd {
     position: relative; }
     .weui_select_before .weui_cell_hd:after {
@@ -665,12 +663,15 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   width: 100%;
   font-size: inherit;
   height: 43px;
+  line-height: 44px;
   position: relative;
   z-index: 1;
   padding-left: 15px; }
 
 .weui_select_after {
   padding-left: 15px; }
+  .weui_select_after .weui_select {
+    padding-left: 0; }
 
 .weui_vcode {
   padding-top: 0;
@@ -840,7 +841,6 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
   margin: 1.17647em 15px 0.3em; }
   .weui_btn_area.weui_btn_area_inline {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
     .weui_btn_area.weui_btn_area_inline .weui_btn {
@@ -848,7 +848,6 @@ button.weui_btn_inline, button.weui_btn_mini, input.weui_btn_inline, input.weui_
       margin-right: 15px;
       width: 100%;
       -webkit-box-flex: 1;
-      -webkit-flex: 1;
           -ms-flex: 1;
               flex: 1; }
       .weui_btn_area.weui_btn_area_inline .weui_btn:last-child {
@@ -987,10 +986,15 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   .weui_article h3 {
     font-weight: 400;
     font-size: 15px; }
+  .weui_article * {
+    max-width: 100%;
+    box-sizing: border-box;
+    word-wrap: break-word; }
+  .weui_article p {
+    margin: 10px 0; }
 
 .weui_tabbar {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
@@ -1014,7 +1018,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 .weui_tabbar_item {
   display: block;
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 7px 0 0;
@@ -1040,7 +1043,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 
 .weui_navbar {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   position: absolute;
@@ -1069,7 +1071,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   position: relative;
   display: block;
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1;
   padding: 13px 0;
@@ -1112,11 +1113,9 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 
 .weui_progress {
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
-  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center; }
 
@@ -1124,7 +1123,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   background-color: #ebebeb;
   height: 3px;
   -webkit-box-flex: 1;
-  -webkit-flex: 1;
       -ms-flex: 1;
           flex: 1; }
 
@@ -1252,11 +1250,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
     left: 15px; }
   .weui_media_box:first-child:before {
     display: none; }
-  a .weui_media_box {
-    color: #000000;
-    -webkit-tap-highlight-color: transparent; }
-    a .weui_media_box:active {
-      background-color: #ECECEC; }
   .weui_media_box .weui_media_title {
     font-weight: 400;
     font-size: 17px;
@@ -1294,11 +1287,9 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
       border-left: 1px solid #CECECE; }
   .weui_media_box.weui_media_appmsg {
     display: -webkit-box;
-    display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center; }
     .weui_media_box.weui_media_appmsg .weui_media_hd {
@@ -1313,7 +1304,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
       vertical-align: middle; }
     .weui_media_box.weui_media_appmsg .weui_media_bd {
       -webkit-box-flex: 1;
-      -webkit-flex: 1;
           -ms-flex: 1;
               flex: 1;
       min-width: 0; }
@@ -1323,6 +1313,12 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
       margin-top: 0; }
       .weui_media_box.weui_media_small_appmsg .weui_cells:before {
         display: none; }
+
+a.weui_media_box {
+  color: #000000;
+  -webkit-tap-highlight-color: transparent; }
+  a.weui_media_box:active {
+    background-color: #ECECEC; }
 
 .weui_grids {
   position: relative;
@@ -1416,7 +1412,8 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
           transform: translate(-50%, -50%);
   background-color: #FAFAFC;
   text-align: center;
-  border-radius: 3px; }
+  border-radius: 3px;
+  overflow: hidden; }
   .weui_dialog_confirm .weui_dialog .weui_dialog_hd {
     padding: 1.2em 20px .5em; }
   .weui_dialog_confirm .weui_dialog .weui_dialog_bd {
@@ -1442,13 +1439,11 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   margin-top: 20px;
   font-size: 17px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .weui_dialog_ft a {
     display: block;
     -webkit-box-flex: 1;
-    -webkit-flex: 1;
         -ms-flex: 1;
             flex: 1;
     color: #3CC51F;
@@ -2114,7 +2109,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   position: relative;
   padding: 8px 10px;
   display: -webkit-box;
-  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   box-sizing: border-box;
@@ -2154,7 +2148,6 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
 .weui_search_outer {
   position: relative;
   -webkit-box-flex: 1;
-  -webkit-flex: auto;
       -ms-flex: auto;
           flex: auto;
   background-color: #EFEFF4; }
@@ -2185,10 +2178,10 @@ button.weui_btn_plain_default, input.weui_btn_plain_default {
   .weui_search_inner .weui_search_input {
     padding: 4px 0;
     width: 100%;
-    height: 20/14em;
+    height: 1.42857em;
     border: 0;
     font-size: 14px;
-    line-height: 20/14em;
+    line-height: 1.42857em;
     box-sizing: content-box;
     background: transparent; }
     .weui_search_inner .weui_search_input:focus {
