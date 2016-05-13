@@ -5,7 +5,7 @@ $weuiDialogLineColor: #D5D5D6;
 $weuiDialogLinkColor: #3CC51F;
 $weuiDialogLinkActiveBc: #EEEEEE;
 
-.weui_dialog {
+.#{$weui_ns}dialog {
     position: fixed;
     z-index: 13;
     width: 85%;
@@ -17,26 +17,26 @@ $weuiDialogLinkActiveBc: #EEEEEE;
     text-align: center;
     border-radius: 3px;
     overflow: hidden;
-    .weui_dialog_confirm & {
-        .weui_dialog_hd {
+    .#{$weui_ns}dialog_confirm & {
+        .#{$weui_ns}dialog_hd {
             padding: 1.2em 20px .5em;
         }
-        .weui_dialog_bd {
+        .#{$weui_ns}dialog_bd {
             text-align: left;
         }
     }
 }
 
-.weui_dialog_hd {
+.#{$weui_ns}dialog_hd {
     padding: 1.2em 0 .5em;
 }
 
-.weui_dialog_title {
+.#{$weui_ns}dialog_title {
     font-weight: 400;
     font-size: 17px;
 }
 
-.weui_dialog_bd {
+.#{$weui_ns}dialog_bd {
     padding: 0 20px;
     font-size: 15px;
     color: $globalTextColor;
@@ -44,7 +44,7 @@ $weuiDialogLinkActiveBc: #EEEEEE;
     word-break: break-all;
 }
 
-.weui_dialog_ft {
+.#{$weui_ns}dialog_ft {
     position: relative;
     line-height: 42px;
     margin-top: 20px;
@@ -64,7 +64,7 @@ $weuiDialogLinkActiveBc: #EEEEEE;
         content: " ";
         @include setTopLine($weuiDialogLineColor);
     }
-    .weui_dialog_confirm & {
+    .#{$weui_ns}dialog_confirm & {
         a {
             position: relative;
             &:after {
@@ -80,7 +80,7 @@ $weuiDialogLinkActiveBc: #EEEEEE;
     }
 }
 
-.weui_btn_dialog {
+.#{$weui_ns}btn_dialog {
     &.default {
         color: #353535;
     }
@@ -90,7 +90,7 @@ $weuiDialogLinkActiveBc: #EEEEEE;
 }
 
 @media screen and (min-width: 1024px) {
-    .weui_dialog {
+    .#{$weui_ns}dialog {
         width: 35%;
     }
 }
