@@ -1,17 +1,29 @@
 {
   "name": "weui-sass",
-  "version": "0.4.3",
+  "version": "0.4.2",
   "description": "sass version for wechat mobile ui",
-  "main": "index.js",
+  "keywords": [
+    "weui",
+    "weui-sass",
+    "weixin",
+    "css",
+    "sass",
+    "mobile"
+  ],
+  "style": "dist/style/weui.css",
+  "sass": "src/style/weui.sass",
+  "main": "dist/style/weui.css",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Haibin Yu",
+  "homepage": "https://github.com/kevyu/weui-sass",
   "license": "MIT",
   "devDependencies": {
     "chokidar": "^1.0.5",
     "express": "^4.11.2",
     "gulp": "^3.8.10",
+    "gulp-header": "^1.7.1",
     "gulp-autoprefixer": "^2.3.1",
     "gulp-compass": "^2.1.0",
     "gulp-clean-css": "^2.0.7",

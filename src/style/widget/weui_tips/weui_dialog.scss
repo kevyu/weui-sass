@@ -68,7 +68,6 @@ $weuiDialogLinkActiveBc: #EEEEEE;
         a {
             position: relative;
             &:after {
-                content: " ";
                 @include setLeftLine($weuiDialogLineColor);
             }
             &:first-child {
