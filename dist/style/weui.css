@@ -1,3 +1,8 @@
+/*!
+ * WeUI-sass v0.4.2 (https://github.com/kevyu/weui-sass)
+ * Author： Haibin Yu.
+ * Time： 2016/4/17.
+ */
 @charset "UTF-8";
 html {
   -ms-text-size-adjust: 100%;
@@ -168,7 +173,7 @@ a {
   color: #FFBE00; }
 
 .weui_icon_cancel:before {
-  font-size: 23px;
+  font-size: 22px;
   color: #F43530; }
 
 .weui_icon_search:before {
@@ -1453,7 +1458,6 @@ a.weui_media_box {
       background-color: #EEEEEE; }
   .weui_dialog_ft:after {
     content: " ";
-    content: " ";
     position: absolute;
     left: 0;
     top: 0;
@@ -1468,7 +1472,6 @@ a.weui_media_box {
   .weui_dialog_confirm .weui_dialog_ft a {
     position: relative; }
     .weui_dialog_confirm .weui_dialog_ft a:after {
-      content: " ";
       content: " ";
       position: absolute;
       left: 0;

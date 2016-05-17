@@ -5,6 +5,8 @@ var sass = require('gulp-sass');
 var minify = require('gulp-clean-css');
 var autoprefixer = require('gulp-autoprefixer');
 var rename = require('gulp-rename');
+var header = require('gulp-header');
+var pkg = require('./package.json');
 
 var path = require('path');
 
@@ -17,20 +19,28 @@ var dist = path.join(__dirname, 'dist');
 gulp.task('release', function(){
 
     var option = {base: 'src'};
+    var banner = [
+        '/*!',
+        ' * WeUI-sass v<%= pkg.version %> (<%= pkg.homepage %>)',
+        ' * Author： <%= pkg.author %>.',
+        ' * Time： <%= new Date().getFullYear() %>/<%= new Date().getMonth() %>/<%= new Date().getDate() %>.',
+        ' */',
+        ''].join('\n');
 
     // 复制非scss文件到dist
     gulp.src('src/example/**/*.!(scss)', option)
         .pipe(gulp.dest(dist));
 
     gulp.src('src/example/**/*.scss', option)
-    .pipe(sass())
-    .pipe(gulp.dest(dist));
+        .pipe(sass())
+        .pipe(gulp.dest(dist));
 
     gulp.src('src/style/weui.scss', option)
         .pipe(sass().on('error', function (e){
             console.error(e.message);
             this.emit('end');
         }))
+        .pipe(header(banner, { pkg : pkg } ))
         .pipe(autoprefixer())
         .pipe(gulp.dest(dist))
         .pipe(minify())
