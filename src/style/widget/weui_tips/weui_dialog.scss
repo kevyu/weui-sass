@@ -61,7 +61,6 @@ $weuiDialogLinkActiveBc: #EEEEEE;
         }
     }
     &:after {
-        content: " ";
         @include setTopLine($weuiDialogLineColor);
     }
     .#{$weui_ns}dialog_confirm & {

@@ -1,7 +1,7 @@
 /*!
  * WeUI-sass v0.4.2 (https://github.com/kevyu/weui-sass)
  * Author： Haibin Yu.
- * Time： 2016/4/16.
+ * Time： 2016/4/17.
  */
 @charset "UTF-8";
 html {
@@ -1457,7 +1457,6 @@ a.weui_media_box {
     .weui_dialog_ft a:active {
       background-color: #EEEEEE; }
   .weui_dialog_ft:after {
-    content: " ";
     content: " ";
     position: absolute;
     left: 0;
