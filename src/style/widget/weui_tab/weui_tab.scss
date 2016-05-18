@@ -18,3 +18,7 @@
 .#{$weui_ns}tab_bd_item {
     display: none;
 }
+
+.#{$weui_ns}tab_bd_item_active {
+    display: block;
+}
