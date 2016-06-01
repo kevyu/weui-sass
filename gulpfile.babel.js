@@ -19,8 +19,8 @@ const dist = path.join(__dirname, 'dist');
 // release 整个项目
 gulp.task('release', () => {
 
-    var option = {base: 'src'};
-    var banner = [
+    const option = {base: 'src'};
+    const banner = [
         '/*!',
         ' * WeUI-sass v<%= pkg.version %> (<%= pkg.homepage %>)',
         ' * Author： <%= pkg.author %>.',
@@ -60,12 +60,12 @@ gulp.task('watch', () => {
 
 // 启动server
 gulp.task('server', () => {
-    var app = express();
-    var port = yargs.p || yargs.port || 8080;
+    const app = express();
+    const port = yargs.p || yargs.port || 8080;
     app.use(express.static(dist));
     app.listen(port, () => {
         port = port === 80 ? '' : ':' + port;
-        var url = 'http://127.0.0.1' + port;
+        const url = 'http://127.0.0.1' + port;
         console.log(url);
     });
 });
