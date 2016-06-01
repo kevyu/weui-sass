@@ -64,8 +64,7 @@ gulp.task('server', () => {
     const port = yargs.p || yargs.port || 8080;
     app.use(express.static(dist));
     app.listen(port, () => {
-        port = port === 80 ? '' : ':' + port;
-        const url = 'http://127.0.0.1' + port;
+        const url = 'http://127.0.0.1' + (port === 80 ? '' : ':' + port);
         console.log(url);
     });
 });
