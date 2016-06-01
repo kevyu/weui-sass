@@ -3,6 +3,10 @@
   "version": "0.4.3",
   "description": "sass version for wechat mobile ui",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kevyu/weui-sass.git"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
