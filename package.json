@@ -8,7 +8,8 @@
     "weixin",
     "css",
     "sass",
-    "mobile"
+    "mobile",
+    "es6"
   ],
   "style": "dist/style/weui.css",
   "sass": "src/style/weui.sass",
@@ -24,6 +25,8 @@
   "homepage": "https://github.com/kevyu/weui-sass",
   "license": "MIT",
   "devDependencies": {
+    "babel-core": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
     "chokidar": "^1.0.5",
     "express": "^4.11.2",
     "gulp": "^3.8.10",
