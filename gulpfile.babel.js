@@ -1,22 +1,25 @@
+'use strict';
+
 var yargs = require('yargs').argv;
-var gulp = require('gulp');
-var chokidar = require('chokidar');
-var sass = require('gulp-sass');
-var minify = require('gulp-clean-css');
-var autoprefixer = require('gulp-autoprefixer');
-var rename = require('gulp-rename');
-var header = require('gulp-header');
-var pkg = require('./package.json');
 
-var path = require('path');
+import gulp from 'gulp';
+import chokidar from 'chokidar';
+import sass from 'gulp-sass';
+import minify from 'gulp-clean-css';
+import autoprefixer from 'gulp-autoprefixer';
+import rename from 'gulp-rename';
+import header from 'gulp-header';
+import pkg from './package.json';
 
-var express = require('express');
+const path = require('path');
+
+const express = require('express');
 
 // 构建后的目标地址
-var dist = path.join(__dirname, 'dist');
+const dist = path.join(__dirname, 'dist');
 
 // release 整个项目
-gulp.task('release', function(){
+gulp.task('release', () => {
 
     var option = {base: 'src'};
     var banner = [
@@ -36,7 +39,7 @@ gulp.task('release', function(){
         .pipe(gulp.dest(dist));
 
     gulp.src('src/style/weui.scss', option)
-        .pipe(sass().on('error', function (e){
+        .pipe(sass().on('error', (e) => {
             console.error(e.message);
             this.emit('end');
         }))
@@ -44,25 +47,25 @@ gulp.task('release', function(){
         .pipe(autoprefixer())
         .pipe(gulp.dest(dist))
         .pipe(minify())
-        .pipe(rename(function (path){
+        .pipe(rename( (path) => {
             path.basename += '.min';
         }))
         .pipe(gulp.dest(dist));
 });
 
 // 如果文件发生变动则直接release
-gulp.task('watch', function () {
-    chokidar.watch('src/**/*.*').on('all', function () {
+gulp.task('watch', () => {
+    chokidar.watch('src/**/*.*').on('all', () => {
         gulp.run('release');
     });
 });
 
 // 启动server
-gulp.task('server', function () {
+gulp.task('server', () => {
     var app = express();
     var port = yargs.p || yargs.port || 8080;
     app.use(express.static(dist));
-    app.listen(port, function () {
+    app.listen(port, () => {
         port = port === 80 ? '' : ':' + port;
         var url = 'http://127.0.0.1' + port;
         console.log(url);
@@ -74,7 +77,7 @@ gulp.task('server', function () {
 //  -w: 实时监听
 //  -s: 启动服务器
 //  -p: 服务器启动端口，默认8080
-gulp.task('default', function () {
+gulp.task('default', () => {
     if (yargs.w){
         gulp.start('release');
         gulp.start('watch');
