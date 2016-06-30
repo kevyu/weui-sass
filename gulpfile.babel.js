@@ -42,7 +42,9 @@ gulp.task('release', () => {
             this.emit('end');
         }))
         .pipe(header(banner, { pkg : pkg } ))
-        .pipe(autoprefixer())
+        .pipe(autoprefixer({
+            browsers: ['iOS >= 7', 'Android >= 4.1']
+        }))
         .pipe(gulp.dest(dist))
         .pipe(minify())
         .pipe(rename( (path) => {
