@@ -130,10 +130,10 @@ body, .page {
     transform: translate3d(100%, 0, 0); } }
 
 .page.slideIn {
-  animation: slideIn .2s forwards; }
+  animation: slideIn 0.2s forwards; }
 
 .page.slideOut {
-  animation: slideOut .2s forwards; }
+  animation: slideOut 0.2s forwards; }
 
 .search_show {
   display: none;
