@@ -1,7 +1,5 @@
 @import "../../base/fn";
 
-$lineColor: #E5E5E5;
-$grayColor: #999999;
 
 .#{$weui_ns}panel {
     background-color: #FFFFFF;
@@ -13,51 +11,23 @@ $grayColor: #999999;
     position: relative;
     overflow: hidden;
     &:before {
-        @include setTopLine($lineColor);
+        @include setTopLine($weuiLineColorLight);
     }
     &:after {
-        @include setBottomLine($lineColor);
+        @include setBottomLine($weuiLineColorLight);
     }
 }
 
-.#{$weui_ns}panel_hd {
+.#{$weui_ns}panel__hd {
     padding: 14px 15px 10px;
-    color: $grayColor;
+    color: $weuiTextColorGray;
     font-size: 13px;
     position: relative;
     &:after {
-        @include setBottomLine($lineColor);
+        @include setBottomLine($weuiLineColorLight);
         left: 15px;
     }
 }
-
-.#{$weui_ns}panel_ft {
-    padding: 10px 15px 12px;
-    color: $grayColor;
-    font-size: 14px;
-    position: relative;
-    &:before {
-        @include setTopLine($lineColor);
-        left: 15px;
-    }
-    .#{$weui_ns}panel_access & {
-        display: block;
-        color: #586C94;
-        @include setTapColor();
-        &:active {
-            background-color:#ECECEC;
-        }
-        &:after {
-            content: " ";
-            @include setArrow(right, 6px, #C7C7CC, 2px);
-            position: absolute;
-            right: 15px;
-            top: 50%;
-            margin-top: -4px;
-        }
-    }
-}
-
 
 
 
