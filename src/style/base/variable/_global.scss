@@ -2,7 +2,8 @@
 $weui_ns: 'weui-' !default;
 
 // font
-@weuiFontEN:-apple-system-font,"Helvetica Neue";
-@weuiFontCN:"PingFang SC","Hiragino Sans GB","Microsoft YaHei";
-@weuiFontSans:sans-serif;
-@weuiFontDefault:@weuiFontEN,@weuiFontSans;
+$weuiFontEN:-apple-system-font,"Helvetica Neue";
+$weuiFontCN:"PingFang SC","Hiragino Sans GB","Microsoft YaHei";
+$weuiFontSans:sans-serif;
+$weuiFontDefault:$weuiFontEN,$weuiFontSans;
+
