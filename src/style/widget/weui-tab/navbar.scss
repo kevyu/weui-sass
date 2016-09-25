@@ -9,34 +9,34 @@
     background-color: #fafafa;
 
     &:after {
-        @include setBottomLine($globalBorderColor);
+        @include setBottomLine(#CCCCCC);
     }
 
-    & + .#{$weui_ns}tab_bd {
+    & + .#{$weui_ns}tab__panel {
         padding-top: 50px;
         padding-bottom: 0;
     }
 }
 
-.#{$weui_ns}navbar_item {
+.#{$weui_ns}navbar__item {
     position: relative;
     display: block;
     flex: 1;
     padding: 13px 0;
     text-align: center;
     font-size: 15px;
-    -webkit-tap-highlight-color: transparent;
+    @include setTapColor();
 
     &:active {
         background-color: #ededed;
     }
 
-    &.#{$weui_ns}bar_item_on {
+    &.#{$weui_ns}bar__item_on {
         background-color: #eaeaea;
     }
 
     &:after {
-        @include setRightLine(#cccccc);
+        @include setRightLine(#CCCCCC);
     }
 
     &:last-child {
