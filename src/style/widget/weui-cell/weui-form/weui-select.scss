@@ -5,13 +5,7 @@
     .#{$weui_ns}select {
         padding-right: 30px;
     }
-    .#{$weui_ns}access_icon {
-        // position: absolute;
-        // top: 50%;
-        // right: $weuiCellGapH;
-        // margin-top: -12px;
-    }
-    .#{$weui_ns}cell_bd{
+    .#{$weui_ns}cell__bd{
         &:after{
             content: " ";
             @include setArrow(right, 6px, #C8C8CD, 2px);
@@ -31,9 +25,45 @@
     background-color: transparent;
     width: 100%;
     font-size: inherit;
-    height: 43px;
+    height: $weuiCellHeight;
     line-height: $weuiCellHeight;
     position: relative;
     z-index: 1;
     padding-left: $weuiCellGapH;
+}
+
+.#{$weui_ns}cell_select-before {
+    padding-right:$weuiCellGapH;
+    .#{$weui_ns}select{
+        width:$weuiCellLabelWidth;
+        box-sizing: border-box;
+    }
+    .#{$weui_ns}cell__hd {
+        position:relative;
+        &:after {
+            @include setRightLine($weuiCellBorderColor);
+        }
+        &:before{
+            content: " ";
+            @include setArrow(right, 6px, #C8C8CD, 2px);
+
+            position: absolute;
+            top: 50%;
+            right: $weuiCellGapH;
+            margin-top: -3px;
+        }
+    }
+    .#{$weui_ns}cell__bd {
+        padding-left:$weuiCellGapH;
+        &:after{
+            display:none;
+        }
+    }
+}
+
+.#{$weui_ns}cell_select-after {
+    padding-left:$weuiCellGapH;
+    .#{$weui_ns}select {
+        padding-left:0;
+    }
 }

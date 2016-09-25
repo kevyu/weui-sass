@@ -1,23 +1,32 @@
 ﻿@import "../../base/fn";
 
-.#{$weui_ns}cells_access {
-    .#{$weui_ns}cell:not(.no_access) {
-        // 在cell_access和其它类型的cell混着用的场景下，其它cell要加no_access，避免有点击态
-        @include setTapColor();
-        &:active {
-            background-color: #ECECEC;
-        }
+.#{$weui_ns}cell_access {
+    @include setTapColor();
+    color: inherit;
+    &:active {
+        background-color: #ECECEC;
     }
-    a.#{$weui_ns}cell {
-        color: inherit;
-    }
-    .#{$weui_ns}cell_ft {
+    .#{$weui_ns}cell__ft {
+        padding-right: 13px;
+        position: relative;
         &:after {
             content: " ";
             @include setArrow(right, 6px, #C8C8CD, 2px);
-            top: -1px;
-            margin-left:.3em;
+            position: absolute;
+            top: 50%;
+            margin-top: -4px;
+            right: 2px;
         }
     }
 }
+.#{$weui_ns}cell_link{
+    color: $weuiLinkColorDefault;
+    font-size: 14px;
 
+    // 由于weui-cell:first-child的:before为隐藏，所以这里要重新显示出来
+    &:first-child{
+        &:before{
+            display: block;
+        }
+    }
+}
