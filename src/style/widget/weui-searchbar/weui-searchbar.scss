@@ -1,30 +1,30 @@
 @import "../../base/fn";
-.#{$weui_ns}search_bar {
+.#{$weui_ns}search-bar {
     position: relative;
     padding: 8px 10px;
     display: flex;
     box-sizing: border-box;
     background-color: #EFEFF4;
     &:before {
-        @include setTopLine();
+        @include setTopLine(#D7D6DC);
     }
     &:after {
-        @include setBottomLine();
+        @include setBottomLine(#D7D6DC);
     }
-    &.#{$weui_ns}search_focusing {
-        .#{$weui_ns}search_cancel {
+    &.#{$weui_ns}search-bar_focusing{
+        .#{$weui_ns}search-bar__cancel-btn{
             display: block;
         }
-        .#{$weui_ns}search_text {
+        .#{$weui_ns}search-bar__label{
             display: none;
         }
     }
 }
-.#{$weui_ns}search_outer {
+.#{$weui_ns}search-bar__form {
     position: relative;
     flex: auto;
     background-color: #EFEFF4;
-    &:after {
+    &:after{
         content: '';
         position: absolute;
         left: 0;
@@ -39,7 +39,7 @@
         background: #FFFFFF;
     }
 }
-.#{$weui_ns}search_inner {
+.#{$weui_ns}search-bar__box {
     position: relative;
     padding-left: 30px;
     padding-right: 30px;
@@ -47,7 +47,7 @@
     width: 100%;
     box-sizing: border-box;
     z-index: 1;
-    .#{$weui_ns}search_input {
+    .#{$weui_ns}search-bar__input {
         padding: 4px 0;
         width: 100%;
         height: 20/14*1em;
@@ -60,13 +60,13 @@
             outline: none;
         }
     }
-    .#{$weui_ns}icon_search {
+    .weui-icon-search {
         position: absolute;
         left: 10px;
         top: -2px;
         line-height: 28px;
     }
-    .#{$weui_ns}icon_clear {
+    .weui-icon-clear {
         position: absolute;
         top: -2px;
         right: 0;
@@ -74,7 +74,7 @@
         line-height: 28px;
     }
 }
-.#{$weui_ns}search_text {
+.#{$weui_ns}search-bar__label {
     position: absolute;
     top: 1px;
     right: 1px;
@@ -90,18 +90,18 @@
         font-size: 14px;
         vertical-align: middle;
     }
-    .#{$weui_ns}icon_search {
+    .weui-icon-search {
         margin-right: 5px;
     }
 }
-.#{$weui_ns}search_cancel {
+.#{$weui_ns}search-bar__cancel-btn {
     display: none;
     margin-left: 10px;
     line-height: 28px;
-    white-space: nowrap;
     color: #09BB07;
+    white-space: nowrap;
 }
-.#{$weui_ns}search_input:not(:valid) ~ .#{$weui_ns}icon_clear {
+.#{$weui_ns}search-bar__input:not(:valid) ~ .weui-icon-clear {
     display: none;
 }
 
