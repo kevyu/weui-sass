@@ -14,7 +14,7 @@
         }
         &:before{
             content: " ";
-            @include setArrow_Wap(right, 6px, #C8C8CD, 2px);
+            @include setArrow(right, 6px, #C8C8CD, 2px);
 
             position: absolute;
             top: 50%;

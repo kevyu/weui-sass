@@ -14,7 +14,7 @@
     .#{$weui_ns}cell_ft {
         &:after {
             content: " ";
-            @include setArrow_Wap(right, 6px, #C8C8CD, 2px);
+            @include setArrow(right, 6px, #C8C8CD, 2px);
             top: -1px;
             margin-left:.3em;
         }

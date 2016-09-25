@@ -49,7 +49,7 @@ $grayColor: #999999;
         }
         &:after {
             content: " ";
-            @include setArrow_Wap(right, 6px, #C7C7CC, 2px);
+            @include setArrow(right, 6px, #C7C7CC, 2px);
             position: absolute;
             right: 15px;
             top: 50%;
