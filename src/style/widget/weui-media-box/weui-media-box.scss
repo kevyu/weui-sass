@@ -13,7 +13,7 @@
         }
     }
 
-    a&{
+    a & {
         color:#000000;
         @include setTapColor();
         &:active{
