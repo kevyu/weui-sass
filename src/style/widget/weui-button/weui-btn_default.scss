@@ -1,8 +1,8 @@
 ﻿@import "../../base/fn";
 
 .#{$weui_ns}btn_default {
-    background-color: $weuiBtnDefaultBg;
     color: $weuiBtnDefaultFontColor;
+    background-color: $weuiBtnDefaultBg;
     &:not(.#{$weui_ns}btn_disabled):visited {
         color: $weuiBtnDefaultFontColor;
     }

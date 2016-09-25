@@ -1,30 +1,29 @@
 ﻿@import "../../base/fn";
 
-.#{$weui_ns}btn_plain_primary {
-    color: $weuiBtnPrimaryBg;
-    border: 1px solid $weuiBtnPrimaryBg;
-    &:active {
-        border-color: $weuiBtnPrimaryActiveBg;
+.#{$weui_ns}btn_plain-primary {
+    color: $weuiBtnPlainPrimaryColor;
+    border: 1px solid $weuiBtnPlainPrimaryBorderColor;
+    &:not(.#{$weui_ns}btn_plain-disabled):active {
+        color:$weuiBtnPlainPrimaryActiveColor;
+        border-color: $weuiBtnPlainPrimaryActiveBorderColor;
     }
     &:after {
         border-width: 0;
     }
 }
 
-button.#{$weui_ns}btn_plain_primary, input.#{$weui_ns}btn_plain_primary {
-    border-width: 1px;
-    background-color: transparent;
-}
-
-.#{$weui_ns}btn_plain_default {
-    color: #5A5A5A;
-    border: 1px solid #5A5A5A;
+.#{$weui_ns}btn_plain-default {
+    color: $weuiBtnPlainDefaultColor;
+    border: 1px solid $weuiBtnPlainDefaultBorderColor;
+    &:not(.#{$weui_ns}btn_plain-disabled):active {
+        color:$weuiBtnPlainDefaultActiveColor;
+        border-color: $weuiBtnPlainDefaultActiveBorderColor;
+    }
     &:after {
         border-width: 0;
     }
 }
-
-button.#{$weui_ns}btn_plain_default, input.#{$weui_ns}btn_plain_default {
-    border-width: 1px;
-    background-color: transparent;
+.#{$weui_ns}btn_plain-disabled{
+    color:rgba(0,0,0,.2);
+    border-color:rgba(0,0,0,.2);
 }

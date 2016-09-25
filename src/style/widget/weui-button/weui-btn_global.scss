@@ -29,8 +29,7 @@
         box-sizing: border-box;
         border-radius: $weuiBtnBorderRadius*2;
     }
-
-    &.#{$weui_ns}btn_inline {
-        display: inline-block;
-    }
+}
+.#{$weui_ns}btn_inline {
+    display: inline-block;
 }
