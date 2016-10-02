@@ -39,6 +39,9 @@
         @include setTopLine($weuiDialogLineColor);
     }
 }
+.#{$weui_ns}form-preview__item{
+    overflow: hidden;
+}
 .#{$weui_ns}form-preview__label{
     float: left;
     margin-right: 1em;
