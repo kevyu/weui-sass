@@ -55,47 +55,59 @@ $(function () {
 
     // toast
     $container.on('click', '#showToast', function () {
-        $('#toast').show();
+        $('#toast').fadeIn(200);
         setTimeout(function () {
-            $('#toast').hide();
+            $('#toast').fadeOut(200);
         }, 5000);
     });
     $container.on('click', '#showLoadingToast', function () {
-        $('#loadingToast').show();
+        $('#loadingToast').fadeIn(200);
         setTimeout(function () {
-            $('#loadingToast').hide();
+            $('#loadingToast').fadeOut(200);
         }, 5000);
     });
 
     $container.on('click', '#showDialog1', function () {
-        $('#dialog1').show();
-        $('#dialog1').find('.weui_btn_dialog').on('click', function () {
-            $('#dialog1').hide();
+        $('#dialog1').fadeIn(200);
+        $('#dialog1').find('.weui-dialog__btn').on('click', function () {
+            $('#dialog1').fadeOut(200);
         });
     });
     $container.on('click', '#showDialog2', function () {
-        $('#dialog2').show();
-        $('#dialog2').find('.weui_btn_dialog').on('click', function () {
-            $('#dialog2').hide();
+        $('#dialog2').fadeIn(200);
+        $('#dialog2').find('.weui-dialog__btn').on('click', function () {
+            $('#dialog2').fadeOut(200);
+        });
+    });
+    $container.on('click', '#showDialog3', function () {
+        $('#dialog3').fadeIn(200);
+        $('#dialog3').find('.weui-dialog__btn').on('click', function () {
+            $('#dialog3').fadeOut(200);
+        });
+    });
+    $container.on('click', '#showDialog4', function () {
+        $('#dialog4').fadeIn(200);
+        $('#dialog4').find('.weui-dialog__btn').on('click', function () {
+            $('#dialog4').fadeOut(200);
         });
     });
 
-    $container.on('click', '.weui_navbar_item,.weui_tabbar_item', function () {
-        $(this).addClass('weui_bar_item_on').siblings().removeClass('weui_bar_item_on');
+    $container.on('click', '.weui-navbar_item,.weui-tabbar_item', function () {
+        $(this).addClass('weui-bar_item_on').siblings().removeClass('weui-bar_item_on');
     });
 
-    $container.on('focus', '#search_input', function () {
-        var $weuiSearchBar = $('#search_bar');
-        $weuiSearchBar.addClass('weui_search_focusing');
-    }).on('blur', '#search_input', function () {
-        var $weuiSearchBar = $('#search_bar');
-        $weuiSearchBar.removeClass('weui_search_focusing');
+    $container.on('focus', '#searchInput', function () {
+        var $weuiSearchBar = $('#searchBar');
+        $weuiSearchBar.addClass('weui-search-bar_focusing');
+    }).on('blur', '#searchInput', function () {
+        var $weuiSearchBar = $('#searchBar');
+        $weuiSearchBar.removeClass('weui-search-bar_focusing');
         if ($(this).val()) {
-            $('#search_text').hide();
+            $('#searchText').hide();
         } else {
-            $('#search_text').show();
+            $('#searchText').show();
         }
-    }).on('input', '#search_input', function () {
+    }).on('input', '#searchInput', function () {
         var $searchShow = $("#search_show");
         if ($(this).val()) {
             $searchShow.show();
@@ -104,26 +116,25 @@ $(function () {
         }
     }).on('touchend', '#search_cancel', function () {
         $("#search_show").hide();
-        $('#search_input').val('');
+        $('#searchInput').val('');
     }).on('touchend', '#search_clear', function () {
         $("#search_show").hide();
-        $('#search_input').val('');
+        $('#searchInput').val('');
     });
 
     function hideActionSheet(weuiActionsheet, mask) {
-        weuiActionsheet.removeClass('weui_actionsheet_toggle');
-        mask.removeClass('weui_fade_toggle');
+        weuiActionsheet.removeClass('weui-actionsheet_toggle');
         weuiActionsheet.on('transitionend', function () {
-            mask.hide();
+            mask.fadeOut(200);
         }).on('webkitTransitionEnd', function () {
-            mask.hide();
+            mask.fadeOut(200);
         })
     }
-    $container.on('click','#showActionSheet', function () {
+    $container.on('click','#showIOSActionSheet', function () {
         var mask = $('#mask');
-        var weuiActionsheet = $('#weui_actionsheet');
-        weuiActionsheet.addClass('weui_actionsheet_toggle');
-        mask.show().addClass('weui_fade_toggle').click(function () {
+        var weuiActionsheet = $('#iosActionsheet');
+        weuiActionsheet.addClass('weui-actionsheet_toggle');
+        mask.fadeIn(200).click(function () {
             hideActionSheet(weuiActionsheet, mask);
         });
         $('#actionsheet_cancel').click(function () {
@@ -131,4 +142,12 @@ $(function () {
         });
         weuiActionsheet.unbind('transitionend').unbind('webkitTransitionEnd');
     });
+    $container.on('click','#showAndroidActionSheet', function(){
+        var androidActionSheet = $('#androidActionsheet');
+        var androidMask = $('#androidActionsheet > .weui-mask')
+        androidActionSheet.fadeIn(200);
+        androidMask.on('click',function () {
+            androidActionSheet.fadeOut(200);
+        });
+    })
 });
