@@ -13,6 +13,9 @@
     vertical-align: middle;
 }
 .#{$weui_ns}-badge_dot{
+    position: absolute;
+    top: -.4em;
+    right: -.4em;
     min-width: 0;
     padding: .4em;
 }
