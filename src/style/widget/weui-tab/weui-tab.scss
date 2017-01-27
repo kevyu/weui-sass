@@ -14,3 +14,6 @@
     overflow: auto;
     -webkit-overflow-scrolling: touch;
 }
+.#{$weui_ns}tab__content{
+    display: none;
+}
